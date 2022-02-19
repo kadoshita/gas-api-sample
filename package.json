@@ -1,0 +1,29 @@
+{
+  "name": "gas-api-sample",
+  "version": "1.0.0",
+  "description": "Google Apps ScriptでAPIを動かすサンプル",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepush": "npm run build",
+    "push": "clasp push",
+    "predeploy": "npm run push",
+    "deploy": "clasp deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kadoshita/gas-api-sample.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kadoshita/gas-api-sample/issues"
+  },
+  "homepage": "https://github.com/kadoshita/gas-api-sample#readme",
+  "devDependencies": {
+    "@google/clasp": "^2.4.1",
+    "@types/google-apps-script": "^1.0.45",
+    "typescript": "^4.5.5"
+  }
+}
